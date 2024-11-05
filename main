@@ -838,7 +838,7 @@ local Version = "1.2.1"
 
 task.spawn(function()
     local success, LatestVer = pcall(function()
-        local version = game:HttpGet("https://raw.github.com/revampedbyvamp/Fisch/new/main")
+        local version = game:HttpGet("https://raw.githubusercontent.com/revampedbyvamp/Fisch/refs/heads/main/main")
         return HttpService:JSONDecode(version)
     end)
     
